@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<form onsubmit="ui.changed(this)">
+Key: <input id="key" name="key" onkeyup="ui.changed(this)" onchanged="ui.changed(this)" value="MyKey"  /><br/>
+Message: <input id="msg" name="msg" onkeyup="ui.changed(this)" onchanged="ui.changed(this)" value="Sample #1" /><br/>
+<input type="button" name="msg" onclick="ui.changed(this)" value="Submit" />
+</form>
+<br>
+
+<h3>Hex</h3>
+<div><pre id="out"></pre></div>
+<h3>Base64</h3>
+<div><pre id="out64"></pre></div>
+
+</body>
+<script type="text/javascript" src="dist/hmac_sha256.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+window.ui = window.ui || {};
+function hex(i) {
+  let h=i.toString(16);
+  if (h.length<2) h="0"+h;
+  return h;
+}
+ui.changed=function(event) {
+    let key = document.getElementById("key").value;
+    let msg = document.getElementById("msg").value;
+    const ret = crypto_hmac_sha256.hmac_sha256(key, msg);
+    document.getElementById("out64").innerText=btoa(String.fromCharCode.apply(null, ret));
+    let s='';
+    for(let i of ret) {
+      s+=hex(i);
+    }
+    document.getElementById("out").innerText=s;
+}
+//]]>
+</script>
+</html>

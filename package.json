@@ -1,0 +1,29 @@
+{
+  "name":"@alsadi/hmac_sha256_fallback",
+  "description": "Fallback HMAC SHA256 for browser",
+  "version": "0.0.7",
+  "private": false,
+  "author": "alsadi@gmail.com",
+  "license": "Apache-2.0",
+  "index": "public/dist/hmac_sha256.js",
+  "scripts": {
+    "build": "./build.sh && rollup -c && zopfli public/dist/*.{js,map}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muayyad-alsadi/hmac_sha256_fallback.git"
+  },
+  "keywords": [
+    "async",
+    "ipc"
+  ],
+  "bugs": {
+    "url": "https://github.com/muayyad-alsadi/hmac_sha256_fallback/issues"
+  },
+  "homepage": "https://github.com/muayyad-alsadi/hmac_sha256_fallback#readme",
+  "devDependencies": {
+    "@rollup/plugin-multi-entry": "^6.0.0",
+    "rollup": "^2.12.0",
+    "rollup-plugin-terser": "^6.1.0"
+  }
+}
