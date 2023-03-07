@@ -11,9 +11,24 @@ This package has no dependency as all you need is shipped
 npm install --save-dev '@alsadi/hmac_sha256_fallback'
 ```
 
-then you can use files in your node_modules/
+then you can use files in your `node_modules/`
+
+```
+node_modules/@alsadi/hmac_sha256_fallback/public/dist/hmac_sha256.min.js
+```
+
+You can use it from un
+
+```html
+<script src="https://www.unpkg.com/browse/@alsadi/hmac_sha256_fallback@0.0.8/public/dist/hmac_sha256.js.gz"></script>
+```
 
 ## Demo
 
 enter public directory and run a static server to test
 
+
+```
+cd node_modules/@alsadi/hmac_sha256_fallback/public/
+python3 -m http.server 3000
+```
