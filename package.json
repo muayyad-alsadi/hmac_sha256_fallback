@@ -1,7 +1,7 @@
 {
   "name":"@alsadi/hmac_sha256_fallback",
   "description": "Fallback HMAC SHA256 for browser",
-  "version": "0.2.1",
+  "version": "0.2.3",
   "private": false,
   "author": "alsadi@gmail.com",
   "license": "Apache-2.0",
