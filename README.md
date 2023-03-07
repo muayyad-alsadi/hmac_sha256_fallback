@@ -22,7 +22,7 @@ We got you covered, it's compressed and minified
 You can use it in your HTML from `unpkg` like this
 
 ```html
-<script src="https://www.unpkg.com/@alsadi/hmac_sha256_fallback@0.0.9/public/dist/hmac_sha256.js"></script>
+<script src="https://www.unpkg.com/@alsadi/hmac_sha256_fallback@0.2.1/public/dist/hmac_sha256.min.js"></script>
 ```
 
 ## Demo
