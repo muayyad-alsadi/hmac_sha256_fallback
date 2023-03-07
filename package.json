@@ -14,8 +14,7 @@
     "url": "git+https://github.com/muayyad-alsadi/hmac_sha256_fallback.git"
   },
   "keywords": [
-    "async",
-    "ipc"
+    "crypto", "hmac", "sha256", "polyfill", "wasm", "fallback"
   ],
   "bugs": {
     "url": "https://github.com/muayyad-alsadi/hmac_sha256_fallback/issues"
