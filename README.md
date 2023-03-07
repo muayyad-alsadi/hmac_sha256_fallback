@@ -17,7 +17,9 @@ then you can use files in your `node_modules/`
 node_modules/@alsadi/hmac_sha256_fallback/public/dist/hmac_sha256.min.js
 ```
 
-You can use it from un
+We got you covered, it's compressed and minified
+
+You can use it in your HTML from `unpkg` like this
 
 ```html
 <script src="https://www.unpkg.com/browse/@alsadi/hmac_sha256_fallback@0.0.8/public/dist/hmac_sha256.js.gz"></script>
