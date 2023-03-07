@@ -22,10 +22,15 @@ We got you covered, it's compressed and minified
 You can use it in your HTML from `unpkg` like this
 
 ```html
-<script src="https://www.unpkg.com/@alsadi/hmac_sha256_fallback@0.2.1/public/dist/hmac_sha256.min.js"></script>
+<script src="https://www.unpkg.com/@alsadi/hmac_sha256_fallback@0.2.4/public/dist/hmac_sha256.min.js"></script>
+<script>
+console.log(crypto_hmac_sha256.hmac_sha256("key", "msg"));
+</script>
 ```
 
 ## Demo
+
+Here is the [online demo](https://www.unpkg.com/@alsadi/hmac_sha256_fallback@0.2.4/public/hmac_sha256_js.html)
 
 enter public directory and run a static server to test
 
